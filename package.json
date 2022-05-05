@@ -1,0 +1,61 @@
+{
+    "name": "refonte-parcours-s05",
+    "version": "1.0.0",
+    "description": "Parcours Saison 5",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/O-clock-FS-JS/refonte-parcours-S05.git"
+    },
+    "keywords": [],
+    "author": "oClock.io",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/O-clock-FS-JS/refonte-parcours-S05/issues"
+    },
+    "homepage": "https://github.com/O-clock-FS-JS/refonte-parcours-S05#readme",
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "dotenv": "^16.0.0",
+        "ejs": "^3.1.6",
+        "email-validator": "^2.0.4",
+        "express": "^4.17.3",
+        "express-session": "^1.17.2",
+        "pg": "^8.7.3",
+        "sequelize": "^6.19.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    },
+    "prettier": {
+    "printWidth": 80,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "overrides": [
+      {
+        "files": "*.js",
+        "options": {
+          "parser": "babel"
+        }
+      },
+      {
+        "files": "*.json",
+        "options": {
+          "parser": "json"
+        }
+      }
+    ],
+    "semi": true,
+    "requirePragma": false,
+    "proseWrap": "preserve",
+    "arrowParens": "avoid",
+    "htmlWhitespaceSensitivity": "css",
+    "quoteProps": "as-needed"
+  }
+}
