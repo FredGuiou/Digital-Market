@@ -5,17 +5,42 @@ class Product extends Sequelize.Model {}
 
 //On crée le Model Product qui hérite des propriétés du parent Sequelize.Model 
 
-Product.init({
-    category_id: DataTypes.INTEGER,
-    ref: DataTypes.STRING,
-    attr: DataTypes.STRING,
-    image: DataTypes.STRING,
-    metaDescription: DataTypes.STRING,
-    title: DataTypes.STRING,
-    description: DataTypes.TEXT,
-    excerpt: DataTypes.STRING,
-    priceHT: DataTypes.NUMBER,
-}, {
+Product.init(
+    {
+    category_id: {
+        type: DataTypes.INTEGER
+    },
+    ref: {
+        type: DataTypes.STRING
+    },
+
+    //Je mets en commentaire car cela n'est pas dans la BDD et ma requête plante quand je clique sur shop 
+    // attr: {
+    //     type: DataTypes.STRING
+    // },
+    image: {
+        type: DataTypes.STRING
+    },
+    //Je mets en commentaire car cela n'est pas dans la BDD et ma requête plante quand je clique sur shop
+    // metaDescription: {
+    //     type: DataTypes.STRING
+    // },
+    title: {
+        type: DataTypes.STRING
+    },
+    description: {
+        type: DataTypes.TEXT
+    },
+    //Je mets en commentaire car cela n'est pas dans la BDD et ma requête plante quand je clique sur shop
+    // excerpt: {
+    //     type: DataTypes.STRING
+    // },
+
+    //Je change volontairement le priceHT en price pour cadrer avec ma BDD.
+    price: {
+        type: DataTypes.NUMBER
+    },
+},{
     sequelize, //Le connecteur
     tableName: "products" //Le nom de la table
 });
