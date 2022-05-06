@@ -32,12 +32,17 @@ const catalogController = {
     category: async (req, res) => {
 
         // Étape 6 - Récupérez l'id de la catégorie à afficher (params)
-
+        const id = Number(req.params.id);
         // Étape 6 - Récupérer la catégorie demandée avec les produits associés à cette catégorie
         // const category = ...;
+        const category = await Category.findByPk(id, {
+            include: [
+                'products'
+            ]
 
+        });
         res.render('category', { 
-            // category
+            category
         });
     },
 

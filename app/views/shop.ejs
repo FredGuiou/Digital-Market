@@ -17,7 +17,7 @@
             <!-- Étape 5 Remplacer cette liste par une bloucle sur la variable `categories`-->
             <% for(let oneCategory of categories) { %>
             <li>
-                <a href="/category/1"><%= oneCategory.name %></a>
+                <a href="/category/<%= oneCategory.id %>"><%= oneCategory.name %></a>
             </li>
             <% } %>
             
