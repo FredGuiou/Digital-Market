@@ -20,10 +20,10 @@
             <% for(let oneProduct of category.products) { %>
             <div class="product">
                 <a href="/product/<%= oneProduct.id %>">
-                    <img src="<%= oneProduct.image %>" alt="<%= oneProduct.name %>" />
+                    <img src="<%= oneProduct.image %>" alt="<%= oneProduct.title %>" />
                 </a>
                 <a href="/product/<%= oneProduct.id %>">
-                    <div class="product-name"><%= oneProduct.name %></div>
+                    <div class="product-name"><%= oneProduct.title %></div>
                 </a>
                 <div class="product-price"><%= oneProduct.price %>€</div>
             </div>
